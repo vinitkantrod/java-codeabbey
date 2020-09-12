@@ -26,7 +26,27 @@ public class VowelCount {
             res += count + " ";
         }
         in.close();
-
         System.out.println(res);
     }
 }
+
+/*
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Main {
+
+    public static void main(String[] args) {
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            int rows = Integer.valueOf(br.readLine());
+            for (int i = 0; i < rows; i++) {
+                System.out.print(br.readLine().toLowerCase().replaceAll("[^aeiouy]","").length() + " ");
+            }
+        } catch (IOException io) {
+            io.printStackTrace();
+        }
+    }
+}
+ */
